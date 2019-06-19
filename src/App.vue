@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <NavbarComponent></NavbarComponent>
-    <!-- <img src="./assets/logo.png"> -->
-    <img src="./assets/korn.jpg">
+    <img src="./assets/logo.png">
+    <!-- <img src="./assets/korn.jpg"> -->
     <router-view/>
   </div>
 </template>
