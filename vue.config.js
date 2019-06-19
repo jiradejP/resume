@@ -1,8 +1,13 @@
-vue.config.js
-module.exports = {
-    publicPath: "/"
-} 
+// vue.config.js
+// module.exports = {
+//     publicPath: "/"
+// } 
 
+module.exports = {
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/resume/'
+      : '/'
+  }
 // module.exports = {
 //     publicPath: ‘<my-first-project>’
 //    } 
