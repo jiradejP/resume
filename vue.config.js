@@ -1,4 +1,10 @@
 // vue.config.js
+// module.exports = {
+//     publicPath: '<resume>'
+// } 
+
 module.exports = {
-    publicPath: '<resume>'
-} 
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/resume/'
+      : '/'
+  }
